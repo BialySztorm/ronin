@@ -120,5 +120,5 @@ const msgbox = new MessageBox({
 
 if (window.canRunAds === undefined) {
     // adblocker detected, show fallback
-    msgbox.show("Disable add blocker on this page for bug report\n(atlassian.net requirement)", console.log("AdBlocker detected"))
+    msgbox.show('Disable in add blocker "blocking tracking scripts" on this page for bug report\n(atlassian.net requirement)', console.log("AdBlocker detected"))
 }
