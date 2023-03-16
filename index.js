@@ -112,24 +112,13 @@ class MessageBox {
     }
 }
 
-const msgboxShowMessage = document.querySelector("#msgboxShowMessage")
-const msgboxHiddenClose = document.querySelector("#msgboxHiddenClose")
-
 // Creation of Message Box class, and the sample usage
 const msgbox = new MessageBox({
     closeTime: 10000,
     hideCloseButton: false,
 })
-const msgboxPersistent = new MessageBox({
-    closeTime: 0,
-})
-const msgboxNoClose = new MessageBox({
-    closeTime: 5000,
-    hideCloseButton: true,
-})
-
 
 if (window.canRunAds === undefined) {
     // adblocker detected, show fallback
-    msgbox.show("Disable add blocker for bug report", null)
+    msgbox.show("Disable add blocker on this page for bug report", console.log("AdBlocker detected"))
 }
