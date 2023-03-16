@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Project Ronin</title>
+        <link rel="stylesheet" href="css/index.min.css" />
+    </head>
+    <body>
+        <div class="content">
+            <button class="myCustomTrigger content--btn"><span>Create new bug report</span></button>
+            <div class="content--text">Download game at <a href="https://bialysztorm.itch.io/project-ronin">itch.io</a></div>
+        </div>
+    </body>
+    <script
+        type="text/javascript"
+        src="https://team-crossroads.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-raa8on/b/8/c95134bc67d3a521bb3f4331beb9b804/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=pl-PL&collectorId=337859db"
+    ></script>
+
+    <script type="text/javascript">
+        window.ATL_JQ_PAGE_PROPS = {
+            triggerFunction: function (showCollectorDialog) {
+                //Requires that jQuery is available!
+                jQuery(".myCustomTrigger").click(function (e) {
+                    e.preventDefault()
+                    showCollectorDialog()
+                })
+            },
+        }
+    </script>
+</html>
